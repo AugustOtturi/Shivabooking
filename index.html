@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon">
+
+  <title>Shiva</title>
+
+  <!-- Favicons -->
+
+
+  <!-- Google Fonts -->
+
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: eStartup
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/estartup-bootstrap-landing-page-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  <main>
+    <div id="loader-container">
+      <h1>LOADING</h1>
+      <div class="loading-area">
+        <div class="loader">
+          <div><img src="./assets/hoja.png" alt=""></div>
+          <div><img src="./assets/hoja.png" alt=""></div>
+          <div><img src="./assets/hoja.png" alt=""></div>
+          <div><img src="./assets/hoja.png" alt=""></div>
+          <div><img src="./assets/hoja.png" alt=""></div>
+          <div><img src="./assets/hoja.png" alt=""></div>
+          <div><img src="./assets/hoja.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </main><!-- End #main -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    /* document.addEventListener('DOMContentLoaded', function () {
+      // Deshabilita el scroll
+      disableScroll();
+
+      // Simula una carga de 3.5 segundos
+      setTimeout(function () {
+        document.getElementById('loader-container').style.display = 'none';
+        // Habilita el scroll
+        enableScroll();
+      }, 2000);
+    });
+
+    function disableScroll() {
+      // Calcula el ancho del scroll antes de deshabilitarlo para evitar cambios en el diseño
+      const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+
+      // Agrega padding derecho para compensar el ancho del scroll
+      document.body.style.paddingRight = scrollBarWidth + 'px';
+
+      // Deshabilita el scroll
+      document.body.style.overflow = 'hidden';
+    }
+
+    function enableScroll() {
+      // Habilita el scroll
+      document.body.style.overflow = '';
+      document.body.style.paddingRight = '0';
+    }
+
+    // Función para redirigir a la versión del sitio en el idioma adecuado
+    function redirectBasedOnLanguage() {
+      const userLanguage = navigator.language || navigator.userLanguage;
+
+      // Comprueba el idioma del navegador y redirige a la versión correspondiente
+      if (userLanguage.startsWith('es')) {
+        window.location.href = 'index-es.html'; // Si es español, redirige al sitio en español
+      } else {
+        window.location.href = 'index-en.html'; // De lo contrario, redirige al sitio en inglés
+      }
+    }
+
+    // Llama a la función de redirección cuando la página se carga
+    window.onload = redirectBasedOnLanguage;
+
+ */
+    document.addEventListener('DOMContentLoaded', function () {
+      // Deshabilita el scroll
+      disableScroll();
+
+      // Simula una carga de 3.5 segundos
+      setTimeout(function () {
+        document.getElementById('loader-container').style.display = 'none';
+        // Habilita el scroll
+        enableScroll();
+
+        // Luego de que el loader desaparezca, redirige basado en el idioma
+        redirectBasedOnLanguage();
+      }, 3500); // Ajusta el tiempo al mismo valor que el loader
+
+    });
+
+    function disableScroll() {
+      const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+      document.body.style.paddingRight = scrollBarWidth + 'px';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function enableScroll() {
+      document.body.style.overflow = '';
+      document.body.style.paddingRight = '0';
+    }
+
+    function redirectBasedOnLanguage() {
+      const userLanguage = navigator.language || navigator.userLanguage;
+
+      if (userLanguage.startsWith('es')) {
+        window.location.href = 'index-es.html';
+      } else {
+        window.location.href = 'index-en.html';
+      }
+    }
+
+
+  </script>
+</body>
+
+</html>
